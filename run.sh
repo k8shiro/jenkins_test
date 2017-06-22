@@ -7,7 +7,8 @@ echo "Ubuntu------------"
 cat /etc/lsb-release
 
 
-docker run -i -t centos:centos7 /bin/bash
+docker run -i -t -d --name ansible ansible/centos7-ansible bin
+docker exec ansible ansible --version
 
 
 
