@@ -9,6 +9,7 @@ before_install:
   - sudo apt-get update
   - sudo service docker restart
   - sleep 5
+  - chmod +x ./run.sh
 
 script:
   - ./run.sh
